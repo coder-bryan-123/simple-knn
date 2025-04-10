@@ -22,3 +22,9 @@ demopc = torch.from_numpy(np.load("/path")).float().cuda().contiguous()
 # shape: [N]
 mean_distances = distCUDA2(demopc)
 ```
+
+Tests:
+```
+# no validation currently
+python tests/knn_test.py
+```
